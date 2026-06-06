@@ -247,6 +247,27 @@ export default function Index() {
           </div>
         </section>
 
+        {/* Маскот Фокси */}
+        <section className="section-padding">
+          <div style={{ border: "var(--border)", background: "var(--accent)", boxShadow: "var(--shadow)", overflow: "hidden", display: "flex", flexWrap: "wrap", alignItems: "stretch" }}>
+            <div style={{ flex: "0 0 auto", width: "300px", maxWidth: "100%", minHeight: "340px", background: "url('https://cdn.poehali.dev/projects/92055bed-a79b-437f-a093-4c68c2c26264/bucket/d68ba8f3-85f4-483a-a3ac-806d30bd44d6.png') center/cover", borderRight: "var(--border)" }} />
+            <div style={{ flex: 1, padding: "40px 36px", display: "flex", flexDirection: "column", justifyContent: "center", minWidth: "260px" }}>
+              <p style={{ fontWeight: 800, fontSize: "12px", textTransform: "uppercase", letterSpacing: "3px", color: "var(--dark)", marginBottom: "12px", opacity: 0.55 }}>
+                Наш маскот
+              </p>
+              <h2 style={{ fontFamily: "Unbounded, sans-serif", fontWeight: 800, fontSize: "clamp(28px, 4vw, 52px)", lineHeight: 1, textTransform: "uppercase", marginBottom: "24px", color: "var(--dark)" }}>
+                КТО ТАКАЯ<br /><span style={{ fontFamily: "Playfair Display, serif", fontStyle: "italic", color: "var(--secondary)" }}>Фокси?</span>
+              </h2>
+              <p style={{ fontSize: "16px", lineHeight: 1.7, color: "var(--dark)", marginBottom: "14px" }}>
+                Фокси — рыжая заботливая лиса, которая живёт в нашей кофейне. Она всегда с термокружкой и точно знает, как сделать учёбу вкуснее.
+              </p>
+              <p style={{ fontSize: "16px", lineHeight: 1.7, color: "var(--dark)" }}>
+                Фокси встречает каждого гостя, украшает стаканчики и живёт в стикерах. Она уверена: хороший кофе и тёплое место — лучшее топливо для любой сессии.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Галерея */}
         <section className="section-padding" style={{ paddingBottom: 0 }}>
           <h2 className="section-title" style={{ marginBottom: "40px", textAlign: "center" }}>
