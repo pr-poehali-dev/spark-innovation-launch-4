@@ -80,7 +80,7 @@ export default function Index() {
             <div className="menu-card">
               <span className="menu-tag">Авторский</span>
               <img
-                src="https://images.unsplash.com/photo-1541167760496-1628856ab772?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                src="https://cdn.poehali.dev/projects/92055bed-a79b-437f-a093-4c68c2c26264/bucket/caa2d980-82bb-4e26-b075-a9f3c55740a0.png"
                 alt="Рыжий Лис"
               />
               <div className="menu-card-body">
@@ -99,8 +99,8 @@ export default function Index() {
                 Хит
               </span>
               <img
-                src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Капучино с лисой"
+                src="https://cdn.poehali.dev/projects/92055bed-a79b-437f-a093-4c68c2c26264/bucket/19d45268-d711-42b9-94df-821f38f13347.png"
+                alt="Капучино Фокси"
               />
               <div className="menu-card-body">
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "10px" }}>
@@ -118,7 +118,7 @@ export default function Index() {
                 Новинка
               </span>
               <img
-                src="https://images.unsplash.com/photo-1557006021-b85faa2bc5e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                src="https://cdn.poehali.dev/projects/92055bed-a79b-437f-a093-4c68c2c26264/bucket/e5a3e7fd-3b42-4468-bea3-e65e30981f67.png"
                 alt="Лавандовый хвост"
               />
               <div className="menu-card-body">
@@ -250,7 +250,7 @@ export default function Index() {
         {/* Маскот Фокси */}
         <section className="section-padding">
           <div style={{ border: "var(--border)", background: "var(--accent)", boxShadow: "var(--shadow)", overflow: "hidden", display: "flex", flexWrap: "wrap", alignItems: "stretch" }}>
-            <div style={{ flex: "0 0 auto", width: "300px", maxWidth: "100%", minHeight: "340px", background: "url('https://cdn.poehali.dev/projects/92055bed-a79b-437f-a093-4c68c2c26264/bucket/d68ba8f3-85f4-483a-a3ac-806d30bd44d6.png') center/cover", borderRight: "var(--border)" }} />
+            <div style={{ flex: "0 0 auto", width: "300px", maxWidth: "100%", minHeight: "340px", background: "url('https://cdn.poehali.dev/projects/92055bed-a79b-437f-a093-4c68c2c26264/files/9bcc95a2-0be0-420d-9368-7a09a514d479.jpg') center/cover", borderRight: "var(--border)" }} />
             <div style={{ flex: 1, padding: "40px 36px", display: "flex", flexDirection: "column", justifyContent: "center", minWidth: "260px" }}>
               <p style={{ fontWeight: 800, fontSize: "12px", textTransform: "uppercase", letterSpacing: "3px", color: "var(--dark)", marginBottom: "12px", opacity: 0.55 }}>
                 Наш маскот
