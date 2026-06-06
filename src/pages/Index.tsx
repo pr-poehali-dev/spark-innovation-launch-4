@@ -222,17 +222,26 @@ export default function Index() {
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "24px" }}>
             {[
-              { icon: "♻️", title: "Свой стакан — скидка 30%", text: "Принеси термокружку — платишь меньше. Или купи нашу фирменную «Фокси» и пользуйся скидкой всегда." },
+              { icon: "♻️", title: "Свой стакан — скидка 30%", text: "Принеси термокружку — платишь меньше. Или купи нашу фирменную «Фокси» и пользуйся скидкой всегда.", hasMug: true },
               { icon: "🥛", title: "Растительное молоко бесплатно", text: "Овсяное, миндальное, соевое — цена одна. Потому что забота о здоровье не должна быть роскошью." },
               { icon: "🦊", title: "Карта «Лисий хвост»", text: "Каждое 5-е кофе в подарок. А в день рождения — любой напиток за улыбку." },
               { icon: "🌅", title: "Утренний Лис", text: "С 8:00 до 10:00 — американо всего 90 ₽ для тех, кто идёт на первую пару." },
             ].map((promo) => (
-              <div key={promo.title} style={{ border: "var(--border)", padding: "28px", background: "white", boxShadow: "var(--shadow)", transition: "0.2s" }}
+              <div key={promo.title} style={{ border: "var(--border)", padding: "28px", background: "white", boxShadow: "var(--shadow)", transition: "0.2s", display: "flex", flexDirection: "column" }}
                 onMouseEnter={(e) => { (e.currentTarget as HTMLDivElement).style.transform = "translate(-4px, -4px)"; (e.currentTarget as HTMLDivElement).style.boxShadow = "12px 12px 0 var(--dark)"; }}
                 onMouseLeave={(e) => { (e.currentTarget as HTMLDivElement).style.transform = ""; (e.currentTarget as HTMLDivElement).style.boxShadow = "var(--shadow)"; }}>
-                <div style={{ fontSize: "40px", marginBottom: "14px" }}>{promo.icon}</div>
+                {"hasMug" in promo ? (
+                  <img src="https://cdn.poehali.dev/projects/92055bed-a79b-437f-a093-4c68c2c26264/bucket/f067f42f-850c-4606-8026-122ba9b0744a.png" alt="Термокружка Фокси" style={{ width: "100%", height: "180px", objectFit: "cover", marginBottom: "16px", borderBottom: "var(--border)" }} />
+                ) : (
+                  <div style={{ fontSize: "40px", marginBottom: "14px" }}>{promo.icon}</div>
+                )}
                 <h3 style={{ fontFamily: "Unbounded, sans-serif", fontWeight: 800, fontSize: "16px", textTransform: "uppercase", marginBottom: "10px" }}>{promo.title}</h3>
-                <p style={{ fontSize: "14px", color: "#666", lineHeight: 1.6 }}>{promo.text}</p>
+                <p style={{ fontSize: "14px", color: "#666", lineHeight: 1.6, marginBottom: "16px" }}>{promo.text}</p>
+                {"hasMug" in promo && (
+                  <button className="btn-cta" style={{ background: "var(--primary)", color: "white", marginTop: "auto", width: "100%" }}>
+                    Купить термокружку
+                  </button>
+                )}
               </div>
             ))}
           </div>
