@@ -157,20 +157,25 @@ export default function Index() {
             <h3 style={{ fontFamily: "Unbounded, sans-serif", fontSize: "24px", fontWeight: 800, textTransform: "uppercase", marginBottom: "30px", borderBottom: "var(--border)", paddingBottom: "15px" }}>
               Перекусы
             </h3>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: "12px", marginBottom: "40px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: "20px", marginBottom: "40px" }}>
               {[
-                { name: "Сырники без муки", price: "120 ₽" },
-                { name: "Батончик без сахара", price: "80 ₽" },
-                { name: "Сэндвич «Фокс-тост»", price: "130 ₽" },
-                { name: "Круассан классический", price: "90 ₽" },
-                { name: "Круассан шоколадный", price: "90 ₽" },
-                { name: "Печенье овсяное", price: "60 ₽" },
-                { name: "Пицца с ветчиной и сыром", price: "110 ₽" },
-                { name: "Сырный треугольник", price: "100 ₽" },
+                { name: "Сырники без муки", price: "120 ₽", img: "https://cdn.poehali.dev/projects/92055bed-a79b-437f-a093-4c68c2c26264/files/85c7a4bd-719a-4de0-9ff3-e09b1ab5871f.jpg" },
+                { name: "Батончик без сахара", price: "80 ₽", img: "https://cdn.poehali.dev/projects/92055bed-a79b-437f-a093-4c68c2c26264/files/6c66f96a-a8a8-4b7d-84a7-a7e09388d219.jpg" },
+                { name: "Сэндвич «Фокс-тост»", price: "130 ₽", img: "https://cdn.poehali.dev/projects/92055bed-a79b-437f-a093-4c68c2c26264/files/d64d3205-68a5-4a8f-a760-94e1d3c40dd7.jpg" },
+                { name: "Круассан классический", price: "90 ₽", img: "https://cdn.poehali.dev/projects/92055bed-a79b-437f-a093-4c68c2c26264/bucket/e0860efa-4943-459a-a3d8-8d9fb45e03e5.png" },
+                { name: "Круассан шоколадный", price: "90 ₽", img: "https://cdn.poehali.dev/projects/92055bed-a79b-437f-a093-4c68c2c26264/files/e6499ca4-d61a-4855-b99f-85661f9afa0e.jpg" },
+                { name: "Печенье овсяное", price: "60 ₽", img: "https://cdn.poehali.dev/projects/92055bed-a79b-437f-a093-4c68c2c26264/files/f5feb41d-58bf-4554-a65c-432d67fb003f.jpg" },
+                { name: "Пицца с ветчиной и сыром", price: "110 ₽", img: "https://cdn.poehali.dev/projects/92055bed-a79b-437f-a093-4c68c2c26264/bucket/bd034fb2-e4bf-43cd-ae2b-bc63fd0a8c06.png" },
+                { name: "Сырный треугольник", price: "100 ₽", img: "https://cdn.poehali.dev/projects/92055bed-a79b-437f-a093-4c68c2c26264/bucket/e7fd265a-ba55-4971-81ee-252e92a115f2.png" },
               ].map((item) => (
-                <div key={item.name} style={{ border: "var(--border)", padding: "14px 18px", background: "white", display: "flex", justifyContent: "space-between", alignItems: "center", fontWeight: 700 }}>
-                  <span>{item.name}</span>
-                  <span style={{ color: "var(--primary)", fontFamily: "Playfair Display, serif", fontSize: "18px" }}>{item.price}</span>
+                <div key={item.name} style={{ border: "var(--border)", background: "white", overflow: "hidden", transition: "0.3s" }}
+                  onMouseEnter={(e) => { (e.currentTarget as HTMLDivElement).style.boxShadow = "var(--shadow)"; (e.currentTarget as HTMLDivElement).style.transform = "translate(-4px,-4px)"; }}
+                  onMouseLeave={(e) => { (e.currentTarget as HTMLDivElement).style.boxShadow = ""; (e.currentTarget as HTMLDivElement).style.transform = ""; }}>
+                  <img src={item.img} alt={item.name} style={{ width: "100%", height: "160px", objectFit: "cover", borderBottom: "var(--border)" }} />
+                  <div style={{ padding: "12px 14px", display: "flex", justifyContent: "space-between", alignItems: "center", fontWeight: 700 }}>
+                    <span style={{ fontSize: "13px" }}>{item.name}</span>
+                    <span style={{ color: "var(--primary)", fontFamily: "Playfair Display, serif", fontSize: "18px", flexShrink: 0, marginLeft: "8px" }}>{item.price}</span>
+                  </div>
                 </div>
               ))}
             </div>
