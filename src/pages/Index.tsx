@@ -138,18 +138,23 @@ export default function Index() {
             <h3 style={{ fontFamily: "Unbounded, sans-serif", fontSize: "24px", fontWeight: 800, textTransform: "uppercase", marginBottom: "30px", borderBottom: "var(--border)", paddingBottom: "15px" }}>
               Классика
             </h3>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: "12px", marginBottom: "40px" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: "20px", marginBottom: "40px" }}>
               {[
-                { name: "Американо", price: "120 ₽" },
-                { name: "Капучино", price: "150 ₽" },
-                { name: "Латте", price: "170 ₽" },
-                { name: "Раф", price: "170 ₽" },
-                { name: "Флэт уайт", price: "150 ₽" },
-                { name: "Фокс-какао", price: "150 ₽" },
+                { name: "Американо", price: "120 ₽", img: "https://cdn.poehali.dev/projects/92055bed-a79b-437f-a093-4c68c2c26264/files/35e387a1-927c-452d-937f-abb770b6fabd.jpg" },
+                { name: "Капучино", price: "150 ₽", img: "https://cdn.poehali.dev/projects/92055bed-a79b-437f-a093-4c68c2c26264/files/264e26e9-4d93-4d4e-9543-09db4296d202.jpg" },
+                { name: "Латте", price: "170 ₽", img: "https://cdn.poehali.dev/projects/92055bed-a79b-437f-a093-4c68c2c26264/files/11e290cb-c814-41cb-9be0-7727836ae5a1.jpg" },
+                { name: "Раф", price: "170 ₽", img: "https://cdn.poehali.dev/projects/92055bed-a79b-437f-a093-4c68c2c26264/files/7995b705-0475-41ab-93e4-c897a261028c.jpg" },
+                { name: "Флэт уайт", price: "150 ₽", img: "https://cdn.poehali.dev/projects/92055bed-a79b-437f-a093-4c68c2c26264/files/b4485c1b-6cf9-4af5-876c-84613bbdd473.jpg" },
+                { name: "Фокс-какао", price: "150 ₽", img: "https://cdn.poehali.dev/projects/92055bed-a79b-437f-a093-4c68c2c26264/bucket/795ed1a0-42a3-4c8f-b219-f6ee0b50bc71.jpg" },
               ].map((item) => (
-                <div key={item.name} style={{ border: "var(--border)", padding: "14px 18px", background: "white", display: "flex", justifyContent: "space-between", alignItems: "center", fontWeight: 700 }}>
-                  <span>{item.name}</span>
-                  <span style={{ color: "var(--primary)", fontFamily: "Playfair Display, serif", fontSize: "18px" }}>{item.price}</span>
+                <div key={item.name} style={{ border: "var(--border)", background: "white", overflow: "hidden", transition: "0.3s" }}
+                  onMouseEnter={(e) => { (e.currentTarget as HTMLDivElement).style.boxShadow = "var(--shadow)"; (e.currentTarget as HTMLDivElement).style.transform = "translate(-4px,-4px)"; }}
+                  onMouseLeave={(e) => { (e.currentTarget as HTMLDivElement).style.boxShadow = ""; (e.currentTarget as HTMLDivElement).style.transform = ""; }}>
+                  <img src={item.img} alt={item.name} style={{ width: "100%", height: "160px", objectFit: "cover", borderBottom: "var(--border)" }} />
+                  <div style={{ padding: "12px 14px", display: "flex", justifyContent: "space-between", alignItems: "center", fontWeight: 700 }}>
+                    <span style={{ fontSize: "13px" }}>{item.name}</span>
+                    <span style={{ color: "var(--primary)", fontFamily: "Playfair Display, serif", fontSize: "18px", flexShrink: 0, marginLeft: "8px" }}>{item.price}</span>
+                  </div>
                 </div>
               ))}
             </div>
