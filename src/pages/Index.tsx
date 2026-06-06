@@ -283,7 +283,10 @@ export default function Index() {
 
       <footer id="contacts">
         <div>
-          <div className="footer-logo">🦊 КОФЕ ФОКС</div>
+          <div className="footer-logo" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+            <img src="https://cdn.poehali.dev/projects/92055bed-a79b-437f-a093-4c68c2c26264/bucket/a7d0a760-35a4-48c1-bd5a-f32104391246.png" alt="Кофе Фокс" style={{ height: "56px", width: "56px", objectFit: "contain", flexShrink: 0 }} />
+            КОФЕ ФОКС
+          </div>
           <p style={{ color: "#666", lineHeight: 1.6 }}>
             Кофе Фокс — тепло, которое не жжёт карман.<br />
             Рядом с ЮУрГУ, Челябинск.
