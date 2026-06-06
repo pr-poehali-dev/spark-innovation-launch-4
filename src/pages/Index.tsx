@@ -43,6 +43,20 @@ export default function Index() {
             </div>
           </div>
           <div className="hero-img">
+            <img
+              src="https://cdn.poehali.dev/projects/92055bed-a79b-437f-a093-4c68c2c26264/bucket/b960cc3c-1871-4221-a2d2-625045c7c388.png"
+              alt="Фирменная термокружка Кофе Фокс"
+              style={{
+                position: "absolute",
+                bottom: "0",
+                left: "50%",
+                transform: "translateX(-50%)",
+                height: "85%",
+                width: "auto",
+                objectFit: "contain",
+                zIndex: 2,
+              }}
+            />
             <div className="sticker">
               СКИДКА
               <br />
