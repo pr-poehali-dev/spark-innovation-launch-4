@@ -5,7 +5,15 @@ export default function Index() {
 
       <header className="header">
         <div className="logo" style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-          <img src="https://cdn.poehali.dev/files/738e8eba-2cc2-4129-bb31-d15a24b9c675.png" alt="Кофе Фокс" style={{ height: "52px", width: "52px", objectFit: "contain" }} />
+          <div style={{
+            width: "52px",
+            height: "52px",
+            borderRadius: "50%",
+            backgroundImage: "url('https://cdn.poehali.dev/files/738e8eba-2cc2-4129-bb31-d15a24b9c675.png')",
+            backgroundSize: "420%",
+            backgroundPosition: "8% 10%",
+            flexShrink: 0,
+          }} />
           <span style={{ fontSize: "20px", letterSpacing: "-1px" }}>КОФЕ ФОКС</span>
         </div>
         <nav>
