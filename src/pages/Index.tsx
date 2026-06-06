@@ -250,7 +250,7 @@ export default function Index() {
         {/* Маскот Фокси */}
         <section className="section-padding">
           <div style={{ border: "var(--border)", background: "var(--accent)", boxShadow: "var(--shadow)", overflow: "hidden", display: "flex", flexWrap: "wrap", alignItems: "stretch" }}>
-            <div style={{ flex: "0 0 auto", width: "300px", maxWidth: "100%", minHeight: "340px", background: "url('https://cdn.poehali.dev/projects/92055bed-a79b-437f-a093-4c68c2c26264/files/9bcc95a2-0be0-420d-9368-7a09a514d479.jpg') center/cover", borderRight: "var(--border)" }} />
+            <div style={{ flex: "0 0 auto", width: "300px", maxWidth: "100%", minHeight: "340px", background: "url('https://cdn.poehali.dev/projects/92055bed-a79b-437f-a093-4c68c2c26264/bucket/f2b8b6f9-ee4c-4103-a02c-7c7102bef329.png') center top / cover", borderRight: "var(--border)" }} />
             <div style={{ flex: 1, padding: "40px 36px", display: "flex", flexDirection: "column", justifyContent: "center", minWidth: "260px" }}>
               <p style={{ fontWeight: 800, fontSize: "12px", textTransform: "uppercase", letterSpacing: "3px", color: "var(--dark)", marginBottom: "12px", opacity: 0.55 }}>
                 Наш маскот
