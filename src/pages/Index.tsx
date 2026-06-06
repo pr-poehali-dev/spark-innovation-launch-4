@@ -80,7 +80,7 @@ export default function Index() {
             <div className="menu-card">
               <span className="menu-tag">Авторский</span>
               <img
-                src="https://cdn.poehali.dev/projects/92055bed-a79b-437f-a093-4c68c2c26264/bucket/caa2d980-82bb-4e26-b075-a9f3c55740a0.png"
+                src="https://cdn.poehali.dev/projects/92055bed-a79b-437f-a093-4c68c2c26264/bucket/82cee202-e886-49e8-a569-114b6860ff4b.png"
                 alt="Рыжий Лис"
               />
               <div className="menu-card-body">
@@ -99,7 +99,7 @@ export default function Index() {
                 Хит
               </span>
               <img
-                src="https://cdn.poehali.dev/projects/92055bed-a79b-437f-a093-4c68c2c26264/bucket/19d45268-d711-42b9-94df-821f38f13347.png"
+                src="https://cdn.poehali.dev/projects/92055bed-a79b-437f-a093-4c68c2c26264/bucket/fbff79ef-5558-4f63-a340-56345fd79d6d.png"
                 alt="Капучино Фокси"
               />
               <div className="menu-card-body">
@@ -118,7 +118,7 @@ export default function Index() {
                 Новинка
               </span>
               <img
-                src="https://cdn.poehali.dev/projects/92055bed-a79b-437f-a093-4c68c2c26264/bucket/e5a3e7fd-3b42-4468-bea3-e65e30981f67.png"
+                src="https://cdn.poehali.dev/projects/92055bed-a79b-437f-a093-4c68c2c26264/bucket/fff62573-ad34-4a50-b303-40cd57e043ef.png"
                 alt="Лавандовый хвост"
               />
               <div className="menu-card-body">
